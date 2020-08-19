@@ -1,0 +1,33 @@
+* {
+	margin:0;
+	padding:0
+}
+html,
+body {
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+li {
+	list-style:none
+}
+#banner ul li {
+	width: 100vw;
+	height: 100vh;
+}
+#banner ul li img {
+	width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
