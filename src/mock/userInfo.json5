@@ -1,0 +1,8 @@
+{
+  id: '@id()',
+  username: '@cnmae()',
+  date: '@date()',
+  description: '@paragraph()',
+  ip: '@ip()',
+  email: '@email()'
+}
