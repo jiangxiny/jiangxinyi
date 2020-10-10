@@ -1,0 +1,48 @@
+<!--pages/cook/cook.wxml-->
+<!-- 海报 -->
+<view class="content">
+  <swiper indicator-dots="{{indicatorDots}}"
+    indicator-color="#fff" indicator-active-color="#FF543C"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='search'>
+      <image src="{{searchicon}}" ></image>
+      <input class='input'  value='搜菜谱、食材、相克等'>
+      </input>
+  </view>
+
+<!-- 导航条 -->
+<view class="nav">
+  <view class="nav-item">
+     <view><image src="../images/icon/1.png" style="width:25px;height:23px;"></image></view>
+     <view>菜谱分类</view>
+     </view>
+     <view class="nav-item">
+     <view><image src="../images/icon/2.png" style="width:25px;height:23px;"></image></view>
+     <view>视频</view>
+     </view>
+     <view class="nav-item">
+     <view><image src="../images/icon/3.png" style="width:25px;height:23px;"></image></view>
+     <view>美食养生</view>
+     </view>
+     <view class="nav-item">
+     <view><image src="../images/icon/4.png" style="width:25px;height:23px;"></image></view>
+     <view>闪购</view>
+   </view>
+  </view>
+    <view class="hr"></view>
+    <view class="head">
+  <view>香哈头条</view>
+  <view class="right"></view>
+  </view>
+  <view class="list">
+  <import src="../template/template"/>
+  <view class="list">
+    <template is="cooks" data="{{array}}"/>
+  </view>
+  </view>
+</view>
